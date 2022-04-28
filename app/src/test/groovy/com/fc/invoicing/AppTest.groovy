@@ -6,6 +6,7 @@ package com.fc.invoicing
 import spock.lang.Specification
 
 class AppTest extends Specification {
+
     def "application has a greeting"() {
         setup:
         def app = new App()
@@ -15,5 +16,13 @@ class AppTest extends Specification {
 
         then:
         result != null
+    }
+
+    def "check if application is started"() {
+        setup:
+        def app = new App()
+
+        expect:
+        app.main()
     }
 }
