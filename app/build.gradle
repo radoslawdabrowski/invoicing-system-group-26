@@ -43,7 +43,7 @@ tasks.named('test') {
 }
 
 checkstyle {
-    showValidations = true
+    showViolations = true
     ignoreFailures = false
     maxWarnings = 0
     maxErrors = 0
